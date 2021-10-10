@@ -10,9 +10,13 @@ Step 1 :
 Step 2 :
     Read Dockerfile and do docker build . Create account with dockerhub .
 	gaje85 is my account login name please replace with yours 
+	```
 	  docker build -t gaje85/hellodockerzulu .
+	```  
+	```  
 	  docker images
-     	  will show the newly created image 
+	```     
+	 will show the newly created image 
 	  
 Step 3 :
   Start the container and call the rest api 
