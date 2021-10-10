@@ -5,7 +5,7 @@ Instructions to run the springboot application as docker container
 
 Step 1 :
     Do Maven build \
-	mvn clean install \
+	mvn clean install 
 	
 	
 Step 2 :
@@ -13,19 +13,19 @@ Step 2 :
 	Create account with dockerhub .\
 	gaje85 is my account login name please replace with yours \
 	```
-	  docker build -t gaje85/hellodockerzulu . \
+	  docker build -t gaje85/hellodockerzulu .
 	```  
 	```  
-	  docker images \
+	  docker images 
 	```     
-	 will show the newly created image \ 
+	 will show the newly created image 
 	  
 Step 3 :
-  Start the container and call the rest api \
+  Start the container and call the rest api 
   ```
   docker run -p 8080:8080 gaje85/hellodockerzulu (replace your image name)
-  ``` \
-  Go to browser and type http://localhost:8080/hello \
+  ``` 
+  Go to browser and type http://localhost:8080/hello 
   
 Step 4 :
   Upload it to dockerhub .\
