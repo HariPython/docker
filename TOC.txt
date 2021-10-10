@@ -1,0 +1,117 @@
+Day 1
+-----
+1) Introduction to docker and its architecture , filesystem 
+2) docker installation in ubuntu 
+   create a new Springboot app + dockerize it + upload into the docker hub 
+        will ask all participants to run this 
+   create a version 2 of the same springboot app  + upload into the docker hub 
+       will ask all to run the version 2
+
+3) docker container basic commands
+
+
+
+
+Day 3
+-----
+
+8) docker swarm 
+9) events 
+10) 
+
+ssh -i "devexp.pem" ubuntu@ec2-18-222-153-152.us-east-2.compute.amazonaws.com
+
+
+ 1) OS 
+ 2) JVM - 
+ 3) application (war , jar) -spring boot -> jar 
+ 4) configuration 
+ 
+  docker image repo -> docker hub 
+
+ Linux -> lxc 
+
+ isolated OS process which will have its own RAM , CPU, HDD,networking allocation 
+
+
+
+
+  1000's of microservices 
+
+  each and every microservice will run in say 10 - 50 instances 
+
+  service A running in 100 instance has a update 
+
+
+ in olden days  each and every service will be packed as linux RPM ( 1 GB - 1.5 GB) 
+
+ now as docker images 
+ version 1 = 510 MB
+version 2 = 512 MB
+
+
+  docker desktop in windows 
+
+1) Hyper V
+2) WSL -> windows support for linux
+
+
+build command
+-------------
+docker build -t gaje85/hellodocker .
+
+start the container 
+
+
+1) Created a spring boot application in local machine 
+2) created a docker image in local machine 
+       docker build -t gaje85/hellodockerzulu .
+3) uploaded the docker image in the dockerhub 
+       docker push gaje85/hellodockerzulu
+4) pull the docker image in the EC2 instance 
+     docker pull gaje85/hellodockerzulu
+5) try to start the container in ec2 instance 
+    docker run -p 8080:8080 gaje85/hellodockerzulu 
+
+ to kill the container use 
+ docker kill <container name or id>
+
+
+ 1) version1 app -> docker image ->  pushed in docker image repository(docker hub or ECR , artifactory ) 
+ 2) version2 app -> docker image -> pushed in docker image repository 
+     kubernetes -> rolling updates -> without shutting the docker container  kubernetes can update the version 
+
+
+
+
+Day 2
+------
+1) Docker Process Id
+2) Docker Layered File system 
+3) Docker basic commands 
+4) Docker images 
+5) Docker volumes 
+
+Day 3 and Day 4
+---------------
+1) Docker networking 
+2) Docker compose 
+3) Docker swarm 
+4) Events 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
