@@ -91,6 +91,7 @@ Day 2
 3) Docker basic commands 
 4) Docker images 
 5) Docker volumes 
+6) Docker registry
 
 Day 3 and Day 4
 ---------------
@@ -98,6 +99,58 @@ Day 3 and Day 4
 2) Docker compose 
 3) Docker swarm 
 4) Events 
+
+1)Docker Deamon
+2)Docker REST API
+3)Docker cli
+
+
+Host OS 
+  on top of host OS , containers are started .
+  every container is a isolated process in the OS 
+    if we start a java or php or any process inside the container 
+
+
+
+ fb341ccea132
+
+
+418ac51cfd26
+
+   SRE -> Site Reilability engg
+
+  99.999
+  99.9999
+  99.99999
+
+
+
+
+
+
+
+   While debugging locally, is it possible to see cal logs in console logs?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
