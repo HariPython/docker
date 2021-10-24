@@ -1,0 +1,25 @@
+# base image
+ARG TAG=slim
+FROM node:$TAG
+
+ARG PORT_ARG=3080
+
+# setting the work direcotry
+WORKDIR /usr/src/app
+
+ENV PORT=$PORT_ARG
+
+# copy package.json
+COPY ./package.json .
+
+# install dependencies
+RUN npm install
+
+# COPY index.js
+COPY ./index.js .
+
+EXPOSE 3080
+
+RUN node -v
+
+CMD ["node","index.js"]
