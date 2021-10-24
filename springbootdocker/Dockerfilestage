@@ -1,11 +1,17 @@
-FROM openjdk:8-jdk-alpine as builder
+FROM maven:3.8.3-openjdk-8-slim as builder
 RUN mkdir -p /app/source
 COPY . /app/source
 WORKDIR /app/source
-RUN ./mvnw clean package
+RUN mvn clean package
 
 
-FROM builder
+FROM builder as prod
 COPY --from=builder /app/source/target/*.jar /app/app.jar
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "/app/app.jar"]
+
+
+FROM builder as test
+COPY --from=builder /app/source/target/*.jar /app/test.jar
+EXPOSE 10080
+ENTRYPOINT ["java", "-jar", "/app/test.jar"]
