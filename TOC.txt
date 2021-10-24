@@ -10,7 +10,12 @@ Day 1
 3) docker container basic commands
 
 
-
+Day 2
+------
+4) Docker images - Dockerfile , building images , jib , arg
+5) Docker registry
+6) Docker compose
+7) networking 
 
 Day 3
 -----
@@ -56,99 +61,68 @@ version 2 = 512 MB
 2) WSL -> windows support for linux
 
 
-build command
--------------
-docker build -t gaje85/hellodocker .
 
-start the container 
+docker network
+--------------
 
-
-1) Created a spring boot application in local machine 
-2) created a docker image in local machine 
-       docker build -t gaje85/hellodockerzulu .
-3) uploaded the docker image in the dockerhub 
-       docker push gaje85/hellodockerzulu
-4) pull the docker image in the EC2 instance 
-     docker pull gaje85/hellodockerzulu
-5) try to start the container in ec2 instance 
-    docker run -p 8080:8080 gaje85/hellodockerzulu 
-
- to kill the container use 
- docker kill <container name or id>
-
-
- 1) version1 app -> docker image ->  pushed in docker image repository(docker hub or ECR , artifactory ) 
- 2) version2 app -> docker image -> pushed in docker image repository 
-     kubernetes -> rolling updates -> without shutting the docker container  kubernetes can update the version 
+docker network ls
+docker network prune
 
 
 
 
-Day 2
-------
-1) Docker Process Id
-2) Docker Layered File system 
-3) Docker basic commands 
-4) Docker images 
-5) Docker volumes 
-6) Docker registry
-
-Day 3 and Day 4
----------------
-1) Docker networking 
-2) Docker compose 
-3) Docker swarm 
-4) Events 
-
-1)Docker Deamon
-2)Docker REST API
-3)Docker cli
+Day 3
+-----
+1) Docker images - Dockerfile , building images , arg , env 
+     Jib -> tool to create docker image without docker deamon/desktop
+2) Docker compose
+3) Run selenium hub 4 using docker compose 
+4) Run Kafka using docker compose 
 
 
-Host OS 
-  on top of host OS , containers are started .
-  every container is a isolated process in the OS 
-    if we start a java or php or any process inside the container 
+Day 3
+-----
+1) docker compose remaining 
+2) multistage docker builds 
+3) Docker networking
+4) events
+5) Docker registry
 
 
-
- fb341ccea132
-
-
-418ac51cfd26
-
-   SRE -> Site Reilability engg
-
-  99.999
-  99.9999
-  99.99999
+3) Docker swarm intro 
+5) jenkins + docker registry + REST API to deploy and start the container
+6) basics of nginx 
 
 
 
 
+  docker network ls
+ 
+ to attached a network use 
+
+  docker run imageid --network=none
+  
+  create 2 containers 
+
+  docker network inspect bridge 
+
+  Bridge (default) -> containers running in same network 
+  containers can communicate 
+  
+  ping from host and show the 2 containers 
+
+   docker attach id
+
+  inside container
+
+ 
+   ip addr show 
+   ping the another container 
+
+   
 
 
-
-   While debugging locally, is it possible to see cal logs in console logs?
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
 
 
 
