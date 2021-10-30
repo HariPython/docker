@@ -80,25 +80,28 @@ Day 3
 4) Run Kafka using docker compose 
 
 
-Day 3
+Day 4
 -----
 1) docker compose remaining 
 2) multistage docker builds 
 3) Docker networking
 4) events
-5) Docker registry
 
+Day 5
+-----
+  JIB example (create a docker image without installing docker deamon) 
 
-3) Docker swarm intro 
-5) jenkins + docker registry + REST API to deploy and start the container
-6) basics of nginx 
+1) Docker registry
+2) Docker swarm intro 
+3) jenkins + docker registry + REST API to deploy and start the container
+4) basics of nginx 
 
 
 
 
   docker network ls
  
- to attached a network use 
+  to attached a network use 
 
   docker run imageid --network=none
   
@@ -121,7 +124,9 @@ Day 3
 
    
 
-
+   Multistage builds 
+----------------------
+1) 
   
 
 
