@@ -15,9 +15,9 @@
 
   curl http://18.118.159.63:5555/containers/json
 
-   curl --data "t=5" http://18.118.159.63:5555/containers/<containername>/stop
+   curl --data "t=5" http://18.118.159.63:5555/containers/containername/stop
    
-   curl --data "t=5" http://18.118.159.63:5555/containers/<containername>/start
+   curl --data "t=5" http://18.118.159.63:5555/containers/containername/start
    
    
    
