@@ -2,6 +2,7 @@ To start master
 ---------------
 
 docker swarm init 
+
 docker swarm init --advertise-addr ipadress
 
 docker node ls 
