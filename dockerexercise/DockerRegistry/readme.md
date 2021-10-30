@@ -13,6 +13,7 @@ https://hub.docker.com/_/registry
 5) upload it to local registry 
  
   docker tag hello-world localhost:5000/hello-world
+  
   docker push localhost:5000/hello-world
   
 6) go into the registry container 

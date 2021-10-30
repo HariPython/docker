@@ -87,10 +87,12 @@ Day 4
 3) Docker networking
 4) events
 
+JIB example (create a docker image without installing docker deamon) 
+   only for java application not much useful .
+
 Day 5
 -----
-  JIB example (create a docker image without installing docker deamon) 
-
+Docker compose another example 
 1) Docker registry
 2) Docker swarm intro 
 3) jenkins + docker registry + REST API to deploy and start the container
