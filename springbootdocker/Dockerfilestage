@@ -2,10 +2,14 @@ FROM maven:3.8.3-openjdk-8-slim as builder
 RUN mkdir -p /app/source
 COPY . /app/source
 WORKDIR /app/source
-RUN ./mvnw clean package
+RUN mvn clean package
 
 
+<<<<<<< HEAD
 FROM builder as app
+=======
+FROM builder as prod
+>>>>>>> 1f082b426c914fd34087e26ba5ae72b3875d1178
 COPY --from=builder /app/source/target/*.jar /app/app.jar
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "/app/app.jar"]
@@ -14,4 +18,8 @@ ENTRYPOINT ["java", "-jar", "/app/app.jar"]
 FROM builder as test
 COPY --from=builder /app/source/target/*.jar /app/test.jar
 EXPOSE 10080
+<<<<<<< HEAD
 ENTRYPOINT ["java", "-jar", "/app/test.jar"]
+=======
+ENTRYPOINT ["java", "-jar", "/app/test.jar"]
+>>>>>>> 1f082b426c914fd34087e26ba5ae72b3875d1178
